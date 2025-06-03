@@ -1,0 +1,14 @@
+class substring {
+    public static void main(String[] args) {
+        String STR = "ABC";
+        int n = STR.length();
+        for (int start = 0; start < n; start++) {
+            StringBuilder sb = new StringBuilder();
+            for (int end = start; end < n; end++) {
+                sb.append(STR.charAt(end));
+                System.out.println(sb.toString());
+            }
+
+        }
+    }
+}
